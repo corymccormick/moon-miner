@@ -42,7 +42,7 @@ function mine() {
   }
   if (!cheeseEaterVisited && cheeseCount >= 150) {
     cheeseEaterVisited = true
-    cheeseCount = cheeseCount - 75; alert('The teenage mutant ninja turtles just teleported in and took a bunch of cheese chunks for their pizzas!  *-75 cheese chunks*')
+    cheeseCount = cheeseCount - 75; alert('The teenage mutant ninja turtles just teleported in and took a bunch of cheese chunks for their pizzas! *-75 cheese chunks*')
   }
   update(cheeseCount)
 
@@ -55,9 +55,9 @@ function update(count) {
 
   document.getElementById('platter').innerHTML = `<h4>SPACE PLATTER</h4> <h6> +2 TO CLICK</br> COST: ${clickUpgrades.spacePlatter.cost} <br/> QUANTITY: ${clickUpgrades.spacePlatter.quantity}</h6>`
 
-  document.getElementById('mouse').innerHTML = `<h4>MOUSE DROID</h4> <h6>COST: ${automaticUpgrades.mouseDroid.cost} <br/> QUANTITY: ${automaticUpgrades.mouseDroid.quantity}</h6>`
+  document.getElementById('mouse').innerHTML = `<h4>MOUSE DROID</h4> <h6> +3 AUTO</br> COST: ${automaticUpgrades.mouseDroid.cost} <br/> QUANTITY: ${automaticUpgrades.mouseDroid.quantity}</h6>`
 
-  document.getElementById('magnet').innerHTML = `<h4>CHEEZE MAGNET</h4> <h6>COST: ${automaticUpgrades.cheezeMagnet.cost} <br/> QUANTITY: ${automaticUpgrades.cheezeMagnet.quantity}</h6>`
+  document.getElementById('magnet').innerHTML = `<h4>CHEEZE MAGNET</h4> <h6>+2 AUTO</BR> COST: ${automaticUpgrades.cheezeMagnet.cost} <br/> QUANTITY: ${automaticUpgrades.cheezeMagnet.quantity}</h6>`
 
   document.getElementById('music').play()
 }
