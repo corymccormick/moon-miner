@@ -1,4 +1,5 @@
 let cheeseCount = 0;
+let cheeseEaterVisited = false
 
 let clickUpgrades = {
   cheeseKnife: {
@@ -31,10 +32,8 @@ let automaticUpgrades = {
   }
 }
 
-let cheeseEaterVisited = false
 // add click modifiers here add to cheeseCount, 
 // iterate through click upgrades, find key(cheeseKnife), find item() and pull values, then take those values and make 
-// cheeseCount=clickupgrade.modifier*clickUpgrade.quantity+cheeseCount++
 function mine() {
   cheeseCount++
   for (const [key, value] of Object.entries(clickUpgrades)) {
@@ -47,7 +46,8 @@ function mine() {
   update(cheeseCount)
 
 }
-//<br/+ 1 TO CLICK ${clickUpgrades.cheeseKnife.modifier}  
+
+//+ 1 TO CLICK ${clickUpgrades.cheeseKnife.modifier}  
 function update(count) {
   document.getElementById('count').innerHTML = count
 
