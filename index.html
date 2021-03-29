@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <title>Moon Miner</title>
+</head>
+
+<body>
+  <header>
+    <div container-fluid>
+      <div class="row bg-dark text-light">
+        <div class="col-md text-center">
+          <h1 class="font">MOON MINER</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div container-fluid>
+      <div class="row bg-dark bgimage image-fluid">
+        <div class="col-md btn" onclick="mine()">
+          <img src="/assets/fullmoon.png" id="moon" alt="moon">
+        </div>
+      </div>
+      <div class="row bg-dark">
+        <div class="col-md">
+          <div class="card bg-dark text-center text-light">
+            <h3 class="font">CHEESE CHUNKS: <span id='count'>---</span></h3>
+          </div>
+        </div>
+      </div>
+      <div class="row bg-dark text-center align-items-center justify-content-between ">
+        <div class="col-md-3">
+
+          <button type="button" class="btn btn-warning font font-light" onclick="upgrade('cheeseKnife')" id="knife">
+            <h4>CHEESE KNIFE <h6>COST: 100 CHUNKS</h6>
+            </h4>
+          </button>
+
+        </div>
+        <div class="col-md-3">
+
+          <button type="button" class="btn btn-warning font font-light" onclick="upgrade('spacePlatter')" id='platter'>
+            <h4>SPACE PLATTER<h6>COST: 300 CHUNKS</h6>
+            </h4>
+          </button>
+
+        </div>
+        <div class="col-md-3 ">
+
+          <button type="button" class="btn btn-warning font font-light" onclick="autoUpgrade('mouseDroid')" id="mouse">
+            <h4>MOUSE DROID<h6>COST: 600 CHUNKS</h6>
+            </h4>
+          </button>
+
+        </div>
+        <div class="col-md-3">
+
+          <button type="button" class="btn btn-warning font font-light" onclick="autoUpgrade('cheezeMagnet')"
+            id="magnet">
+            <h4>CHEEZE MAGNET<h6>COST: 500 CHUNKS</h6>
+            </h4>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer container-fluid>
+    <div class="row p-5 bg-dark">
+      <div class="col-md">
+        <audio src="./assets/a11584361330831459308a51656f-orig.wav" id="music"></audio>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>

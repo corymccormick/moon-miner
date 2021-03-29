@@ -1,0 +1,20 @@
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  flex-grow: 1;
+} 
+
+.bgimage{
+  background-image: url(assets/spacey.gif);
+  background-size: cover;
+  background-position: center;
+  min-height:35vh;
+}
+
+.font{
+  font-family: 'Chango', cursive;
+}
