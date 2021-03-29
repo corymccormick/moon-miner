@@ -33,7 +33,7 @@ let automaticUpgrades = {
 }
 
 // add click modifiers here add to cheeseCount, 
-// iterate through click upgrades, find key(cheeseKnife), find item() and pull values, then take those values and make 
+// iterate through click upgrades, find key(cheeseKnife), find item() and pull values, then take those values
 function mine() {
   cheeseCount++
   for (const [key, value] of Object.entries(clickUpgrades)) {
